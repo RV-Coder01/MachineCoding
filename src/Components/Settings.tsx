@@ -1,0 +1,23 @@
+export default function Settings({theme,setTheme}){
+    return(
+        <>
+        <h1>Settings</h1>
+        <h2>
+            <input
+            type="radio"
+            checked={theme==="Dark"}
+            onChange={()=>setTheme("Dark")}
+             />
+            Dark
+        </h2>
+        <h2>
+            <input
+            type="radio"
+            checked={theme==="Light"}
+            onChange={()=>setTheme("Light")}
+             />
+            Light
+        </h2>
+        </>
+    )
+}
